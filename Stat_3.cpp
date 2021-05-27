@@ -545,8 +545,8 @@ int main()
 
 	merge(channels, rez);
 
-	namedWindow("Generated image", WINDOW_AUTOSIZE);
-	imshow("Generated image", rez);
+	//namedWindow("Generated image", WINDOW_AUTOSIZE);
+	//imshow("Generated image", rez);
 	imwrite("generated_image.png", rez);
 	
 	int n1 = 0;
