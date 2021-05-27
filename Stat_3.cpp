@@ -302,6 +302,8 @@ int* solve(int& n,
 			ch_cur = generate(alphabet_size, fs[pos_cur][ch_cur]);
 	}
 
+	for (int p = 0; p < width + 1; ++p)
+		delete[] k[p];
 	delete[] k;
 	for (int p = 0; p < width + 1; ++p)
 		delete[] f[p];
