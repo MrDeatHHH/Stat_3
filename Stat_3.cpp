@@ -65,6 +65,7 @@ int** generate_img(int &width, char alphabet[], const int alphabet_size, string 
 		{
 			cur_width_first = 0;
 			ind_first++;
+			cout << first.length() << endl;
 			if (ind_first < first.length())
 				ind_first_ch = find_ch(alphabet, alphabet_size, first[ind_first]);
 			else
