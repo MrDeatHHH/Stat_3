@@ -426,8 +426,11 @@ void gibs(string& first,
 			cout << endl;
 		}
 		*/
-		cout << first << endl;
-		cout << "---------" << endl;
+		if (show)
+		{
+			cout << first << endl;
+			cout << "---------" << endl;
+		}
 		for (int i = 0; i < width; ++i)
 			delete[] mask2[i];
 		delete[] mask2;
