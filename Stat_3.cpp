@@ -18,6 +18,7 @@ int find_ch(char alphabet[], const int alphabet_size, char ch)
 	for (int i = 0; i < alphabet_size; ++i)
 		if ((alphabet[i] == ch) || ((ch == ' ') && (alphabet[i] == '1')))
 			return i;
+	return alphabet_size - 1;
 }
 
 // Or operation
@@ -67,12 +68,7 @@ int** generate_img(int &width, char alphabet[], const int alphabet_size, string 
 			if (ind_first < first.length())
 				ind_first_ch = find_ch(alphabet, alphabet_size, first[ind_first]);
 			else
-			{
-				cout << "-------------" << endl;
-				cout << alphabet_size << endl;
 				ind_first_ch = alphabet_size - 1;
-				cout << ind_first_ch << endl;
-			}
 		}
 
 		cur_width_second++;
