@@ -51,10 +51,13 @@ int** generate_img(int &width, char alphabet[], const int alphabet_size, string 
 	int ind_second = 0;
 	int cur_width_second = 0;
 	int ind_second_ch = find_ch(alphabet, alphabet_size, second[ind_second]);
-
+	cout << " Hi " << endl;
 	int** img = new int* [width];
 	for (int x = 0; x < width; ++x)
 	{
+		cout << "-----------------------" << endl;
+		cout << ind_first_ch << " " << cur_width_first << endl;
+		cout << ind_second_ch << " " << cur_width_second << endl;
 		img[x] = new int[ch_h];
 		for (int y = 0; y < ch_h; ++y)
 			img[x][y] = 255 * int(or_ab(alphabet_img[ind_first_ch][cur_width_first][y], alphabet_img[ind_second_ch][cur_width_second][y]));
